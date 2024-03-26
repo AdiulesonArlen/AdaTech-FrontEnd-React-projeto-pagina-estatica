@@ -61,7 +61,8 @@ header #navbar .nav-list .nav-item a:hover {
 main {
   margin-top: 6rem;
 }
-main #banner{
+
+main #banner {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
@@ -99,4 +100,39 @@ main #banner .banner-image {
   height: 100%;
   border-radius: 50%;
   max-width: 300px;
+}
+
+/* SECTION POSTS */
+section#posts {
+  margin-top: 70px;
+  background-color: #edf7fa;
+
+}
+
+#posts .posts-content {
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#posts .posts-content .posts-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+#posts .posts-content .posts-content-header .section-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#posts .posts-content .posts-content-header .view-all-link {
+  text-decoration: none;
+  color: #00a8cc;
+}
+
+#posts .posts-content .posts-cards {
+  display: flex;
+  gap: 2rem;
 }
