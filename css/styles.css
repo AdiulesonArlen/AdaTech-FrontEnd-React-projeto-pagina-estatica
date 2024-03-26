@@ -136,3 +136,21 @@ section#posts {
   display: flex;
   gap: 2rem;
 }
+
+#posts .posts-content .posts-cards .posts-card {
+  background-color: #fff;
+  padding: 24px;
+}
+
+#posts .posts-content .posts-cards .posts-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 37px;
+}
+
+#posts .posts-content .posts-cards .posts-card span {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  display: block;
+}
