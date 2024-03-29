@@ -57,6 +57,25 @@ header #navbar .nav-list .nav-item a:hover {
   transition: color 0.3s;
 }
 
+header #navbar .hamburger-menu {
+  display: none;
+}
+
+@media (max-width: 740px) {
+  header #navbar .hamburger-menu {
+    display: block;
+  }
+
+  header #navbar .nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    display: none;
+  }
+}
+
+
 /* SECTION BANNER */
 main {
   margin-top: 6rem;
@@ -87,12 +106,14 @@ main #banner .banner-content .banner-content-subtitle {
 
 main #banner .banner-content .banner-content-btn {
   background-color: #00A8CC;
+  width: 200px;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   border-radius: 3px;
   padding: 8px 24px;
   border: none;
+  margin: 5px;
 }
 
 main #banner .banner-image {
@@ -101,6 +122,21 @@ main #banner .banner-image {
   border-radius: 50%;
   max-width: 300px;
 }
+
+@media (max-width: 920px) {
+  main #banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  main #banner .banner-content {
+    text-align: center;
+  }
+  
+} 
+
+/*  */
 
 /* SECTION POSTS */
 section#posts {
@@ -135,22 +171,39 @@ section#posts {
 #posts .posts-content .posts-cards {
   display: flex;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
-#posts .posts-content .posts-cards .posts-card {
+#posts .posts-content .posts-cards .post-card {
   background-color: #fff;
   padding: 24px;
+  width: 50%;
 }
 
-#posts .posts-content .posts-cards .posts-card h3 {
+#posts .posts-content .posts-cards .post-card .post-card-image {
+  width: 100%;
+}
+
+#posts .posts-content .posts-cards .post-card h3 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 37px;
 }
 
-#posts .posts-content .posts-cards .posts-card span {
-  font-size: 18px;
+#posts .posts-content .posts-cards .post-card span {
+  font-size: 16px;
   font-weight: 400;
-  margin-bottom: 24px;
   display: block;
+  margin-bottom: 10px;
+}
+
+#posts .posts-content .posts-cards .post-card p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+@media (max-width: 740px) {
+  #posts .posts-content .posts-cards {
+    flex-direction: column;
+  }
 }
