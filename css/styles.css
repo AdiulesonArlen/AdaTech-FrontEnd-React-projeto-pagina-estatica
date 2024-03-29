@@ -177,7 +177,7 @@ section#posts {
 #posts .posts-content .posts-cards .post-card {
   background-color: #fff;
   padding: 24px;
-  width: 50%;
+  width: 100%;
 }
 
 #posts .posts-content .posts-cards .post-card .post-card-image {
